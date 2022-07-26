@@ -3,22 +3,28 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.darvi.hksi</groupId>
-    <artifactId>hksi-auth</artifactId>
+    <groupId>club.p6e.ship</groupId>
+    <artifactId>ship-api</artifactId>
     <version>0.0.1</version>
-    <name>hksi-auth</name>
-    <description>hksi-auth</description>
+    <name>ship-api</name>
+    <description>ship-api</description>
 
     <properties>
         <skipTests>true</skipTests>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
+
     <dependencies>
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-            <version>4.1.79.Final</version>
-        </dependency>
+
+    <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-all</artifactId>
+        <version>4.1.79.Final</version>
+    </dependency>
     </dependencies>
+
 </project>

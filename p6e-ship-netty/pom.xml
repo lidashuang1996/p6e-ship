@@ -3,22 +3,55 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.darvi.hksi</groupId>
-    <artifactId>hksi-auth</artifactId>
+    <groupId>club.p6e.ship</groupId>
+    <artifactId>ship-netty</artifactId>
     <version>0.0.1</version>
-    <name>hksi-auth</name>
-    <description>hksi-auth</description>
+    <name>ship-netty</name>
+    <description>ship-netty</description>
 
     <properties>
         <skipTests>true</skipTests>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
             <version>4.1.79.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>club.p6e.ship</groupId>
+            <artifactId>ship-api</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>club.p6e.ship</groupId>
+            <artifactId>ship-core</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.1.11</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.11</version>
         </dependency>
     </dependencies>
 </project>
